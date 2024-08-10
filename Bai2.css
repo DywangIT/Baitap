@@ -1,0 +1,59 @@
+h1 {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+p {
+    margin-top: 0;
+    color: #000000;
+    font-size: 12px;
+}
+
+.form_input {
+    border-radius: 4px;
+    width: 93%;
+    padding: 6px 7px;
+}
+
+.background {
+    width: 230px;
+    height: 220px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    padding: 30%;
+}
+
+.form_label{
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common {
+    padding: 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.common:hover {
+    transform: translateY(-3px);
+}
+
+.deploy {
+    background-color: #373737;
+    color: white;
+}
+
