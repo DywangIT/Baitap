@@ -4,7 +4,74 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Đăng Nhập</title>
-        <link rel="stylesheet" href="Bai2.css">
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <style>
+            h1 {
+                margin-bottom: 0;
+                font-size: 20px;
+            }
+            p {
+                margin-top: 0;
+                color: #000000;
+                font-size: 12px;
+            }
+
+            .form_input {
+                border-radius: 4px;
+                width: 100%;
+                padding: 6px 7px;
+                box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của ô */
+            }
+
+            .background {
+                width: 230px;
+                height: 220px;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 20px;
+                padding-top: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 13px;
+                display: flex;
+                justify-content: center;
+                padding: 30%;
+            }
+
+            .form_label{
+                font-weight: bold;
+            }
+
+            .button {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .common {
+                padding: 7px;
+                border-radius: 5px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: transform 0.2s ease;
+            }
+
+            .common:hover {
+                transform: translateY(-3px);
+            }
+
+            .deploy {
+                background-color: #373737;
+                color: white;
+            }
+            #username{
+                border: 1px solid black;
+            }
+            #password{
+                border: 1px solid black;
+            }
+        </style>
     </head>
 
     <body>
@@ -18,7 +85,16 @@
                     <label class="form_label" for="username">Name</label> <br>
                     <input class="form_input" type="text" id="username" name="username" placeholder="Name of your project" required><br><br>
                     <label class="form_label" for="password">Framework</label> <br>
-                    <input class="form_input" type="passworđ" id="password" name="password" placeholder="Select" required><br><br>
+                    <select class="form_input" type="passworđ" id="password" name="password" placeholder="Select" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="react">React</option>
+                        <option value="angular">Angular</option>
+                        <option value="vue">Vue.js</option>
+                        <option value="django">Django</option>
+                        <option value="laravel">Laravel</option>
+                    </select>    
+                    <br><br>
+                    
                 </form>
             </div>
             <div class="button">
